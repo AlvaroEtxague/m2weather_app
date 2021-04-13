@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Awesome v5.6.3 CSS -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+			integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="weatherApp.css" />
+
+		<title>Awesome Weather App</title>
+	</head>
+
+	<body>
+		<div class="app-container">
+			<header class="search">
+				<input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+			</header>
+
+			<main>
+				<section class="location">
+					<div class="city"></div>
+					<div class="date"></div>
+				</section>
+				<div class="current">
+					<div class="temp"></div>
+					<div class="weather"></div>
+					<div class="hi-low"></div>
+				</div>
+			</main>
+		</div>
+
+		<script src="weatherApp.js"></script>
+	</body>
+</html>

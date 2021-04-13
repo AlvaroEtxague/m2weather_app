@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #2f3542;
+	background-image: url('images/night_rain.png');
+	background-size: cover;
+	background-position: cover center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 15px 15px;
+}
+
+header input {
+	width: 100%;
+	max-width: 280px;
+	padding: 10px 15px;
+	border: none;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 5px;
+
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+	transition: 0.2s ease-out;
+}
+
+header input:focus {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+	flex: 1 1 100%;
+	padding: 25px 25px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.location .city {
+	color: white;
+	font-size: 32px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.location .date {
+	color: white;
+	font-size: 20px;
+}
+
+.current .temp {
+	color: white;
+	font-size: 110px;
+	font-weight: 600;
+	margin: 30px 0px;
+	text-shadow: 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.current .temp span {
+	font-weight: 500;
+}
+
+.current .weather {
+	color: white;
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	font-style: italic;
+	text-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.current .hi-low {
+	color: white;
+	font-size: 24px;
+	font-weight: 500;
+	text-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+}
